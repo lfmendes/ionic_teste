@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+      <button ion-button menuToggle="left"><ion-icon name="menu"></ion-icon></button>
+    <ion-title>
+      GED Mobile - Célula
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+    <ion-item>
+      <ion-label floating>Login</ion-label>
+      <ion-input type="text"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label floating>Senha</ion-label>
+      <ion-input type="password"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <button ion-button color="danger" [navPush]="mainPage">Logar</button>
+      <button ion-button color="secondary" [navPush]="recuperarSenhaPage">Esqueci Minha Senha</button>
+    </ion-item>
+    
+
+  
+  </ion-list>  
+</ion-content>
